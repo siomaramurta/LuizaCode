@@ -1,3 +1,9 @@
+from ast import Import
+import functools
+
+
+from functools import reduce
+
 """ nome = 'Siomara'
 idade = 33
 peso = 84.4
@@ -142,3 +148,58 @@ xf = float(x_str)
 sao_iguais = x == xf
 print("Um float é igual a um int?", sao_iguais)"""
 
+# Resposta do Quiz - Pergunta 3
+""" a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+print(a.pop(),a)
+
+a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+a.pop()
+print(a)
+
+a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+b = a.pop()
+print(b) #Foi o método correto para o quiz """
+
+# Resposta do Quiz - Pergunta 4
+""" a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+a.append('too')
+print(a) """
+
+#Davi tem 13 anos e sua irmã tem 7 anos. Guarde na variável eh_mais_velho a
+#verificação se a idade de Davi é maior que a idade de sua irmã.
+
+""" list = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+
+print(len(list)) """
+
+""" Final da aula sobre tuplas e funções:
+def foo (value):
+    print(f'Olá, esse é o parâmetro: {value}')
+
+foo('Luiza Code') 
+
+Lições extras sobre funções:
+
+Map:
+lista = [100, 248.90, 88, 124.90]
+
+def desconto(preco):
+    return preco * (1-0.1)
+
+lista_de_desconto = list(map(desconto, lista))
+print(lista_de_desconto)
+
+Filter:
+maior_que_100 = list(filter (lambda x: x > 100, lista))
+print(maior_que_100)
+
+Reduce: 
+nova_lista = []
+
+for i in lista:
+    nova_lista.append(float(i))
+    
+print(nova_lista)
+
+reducao_lista = reduce(lambda x, y: x + y, nova_lista, 0)
+print(reducao_lista)"""
